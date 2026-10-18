@@ -25,3 +25,10 @@ if any(not char.isalnum() for char in password):
     score += 1
 
 print("Password Score:", score, "/ 5")    
+
+if score <= 2:
+    print("Password Strength: Weak")
+elif score <= 4:
+    print("Password Strength: Moderate")
+else:
+    print("Password Strength: Strong")
