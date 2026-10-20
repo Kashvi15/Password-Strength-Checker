@@ -10,6 +10,9 @@ A beginner-friendly Python project that checks password strength based on differ
 - Detects special characters
 - Calculates a password score out of 5
 - Rates password strength as Weak, Moderate, or Strong
+- Provides suggestions to improve weak passwords
+- Identifies missing uppercase letters, numbers, and special characters
+- Suggests a minimum password length of 8 characters
 
 ## Technologies Used
 - Python
@@ -30,10 +33,10 @@ python password_checker.py
 This project helped me practice Python conditionals, loops through characters, built-in string methods, and basic password validation.
 
 ## Future Improvements
-- Improve password feedback with clearer suggestions.
 - Add checks for common or easily guessed passwords.
 - Improve password validation and edge-case handling.
 - Add more test cases for different password types.
+- Improve feedback for passwords with different strength levels.
 
 ---
 
