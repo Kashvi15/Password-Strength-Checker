@@ -26,6 +26,18 @@ if any(not char.isalnum() for char in password):
 
 print("Password Score:", score, "/ 5")    
 
+if len(password) < 8:
+    print("Suggestion: Use at least 8 characters.")
+
+if not any(char.isupper() for char in password):
+    print("Suggestion: Add at least one uppercase letter.")    
+
+if not any(char.isdigit() for char in password):
+    print("Suggestion: Add at least one number.")
+
+if not any(not char.isalnum() for char in password):
+    print("Suggestion: Add at least one special character.")
+    
 if score <= 2:
     print("Password Strength: Weak")
 elif score <= 4:
